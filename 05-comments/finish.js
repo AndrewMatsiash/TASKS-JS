@@ -7,3 +7,11 @@
  *
  * 3. Создайте многострочный комментарий
  */
+
+//constructor class
+
+let nameUser = "Pavel"; //this is name user
+
+/**
+ I will be frontend developer
+ */
