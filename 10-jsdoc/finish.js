@@ -12,3 +12,13 @@
  *
  * 4. Вызовите функцию
  */
+/**
+ * Возвращает разницу двух чисел
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} Разница чисел
+ */
+
+const getDifferenceNumbers = (numOne, numTwo) => numOne - numTwo;
+
+console.log(getDifferenceNumbers(7, 5));

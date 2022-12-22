@@ -10,3 +10,10 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+const printMyName = function (name) {
+  console.log(`Hello ${name}`);
+};
+
+printMyName("Dima");
+printMyName("Pavel");
