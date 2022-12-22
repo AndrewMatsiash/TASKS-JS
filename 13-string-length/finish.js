@@ -4,3 +4,7 @@
  *
  * 2. Виведите в консоль длину этой строки
  */
+
+const myName = "my name is Andrew";
+
+console.log(myName.length);

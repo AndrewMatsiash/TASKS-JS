@@ -12,3 +12,14 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+const myName = "my name is Andrew";
+
+let isInstanceofStr = myName instanceof String;
+let isTypeString = typeof myName === "string";
+
+if (!isInstanceofStr && isTypeString) {
+  const myNameUpperCase = myName.toUpperCase();
+
+  console.log(myNameUpperCase);
+}
