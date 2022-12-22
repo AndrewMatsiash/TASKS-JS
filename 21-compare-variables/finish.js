@@ -6,12 +6,18 @@
  * 2. Преобразуйте обе переменные в числа перед сравнением.
  */
 
-let myVariable1 = 10
-let myVariable2 = '5'
+let myVariable1 = 10;
+let myVariable2 = "5";
 
+if (+myVariable1 <= +myVariable2) {
+  console.log(true);
+}
 // Напишите код здесь
 
-myVariable1 = '20'
-myVariable2 = 100
+myVariable1 = "20";
+myVariable2 = 100;
 
+if (parseInt(myVariable1) <= parseInt(myVariable2)) {
+  console.log(true);
+}
 // Напишите код здесь
