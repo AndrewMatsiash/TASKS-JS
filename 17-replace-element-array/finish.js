@@ -8,3 +8,8 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+const arr = [1, "age", { name: "3" }, null];
+console.log(arr);
+arr[1] = "street";
+console.log(arr);
