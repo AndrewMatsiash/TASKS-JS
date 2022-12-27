@@ -10,25 +10,34 @@
  */
 
 const tags = [
-  ['javascript', 'es6'],
-  ['css', 'flexbox'],
-  ['html', 'web-browser'],
-]
+  ["javascript", "es6"],
+  ["css", "flexbox"],
+  ["html", "web-browser"],
+];
 
 const fruits = [
-  { title: 'Orange', quantity: 10 },
-  { title: 'Banana', quantity: 5 },
-  { title: 'Apple', quantity: 25 },
-]
+  { title: "Orange", quantity: 10 },
+  { title: "Banana", quantity: 5 },
+  { title: "Apple", quantity: 25 },
+];
 
-const primitiveTypesArray = [25, 'x', true, undefined, null]
+const primitiveTypesArray = [25, "x", true, undefined, null];
 
-console.log(isElementInArray(['css', 'flexbox'], tags)) // true
+const isElementInArray = (searchElement, inputArray) => {
+  const isObject = searchElement !== null && typeof searchElement === "object";
 
-console.log(isElementInArray(['flexbox', 'css'], tags)) // false
+  if (isObject) {
+    return inputArray.map((element) => JSON.stringify(element)).includes(JSON.stringify(searchElement));
+  }
 
-console.log(isElementInArray({ title: 'Apple', quantity: 25 }, fruits)) // true
+  return inputArray.includes(searchElement);
+};
+console.log(isElementInArray(["css", "flexbox"], tags)); // true
 
-console.log(isElementInArray({ title: 'Banana' }, fruits)) // false
+console.log(isElementInArray(["flexbox", "css"], tags)); // false
 
-console.log(isElementInArray(25, primitiveTypesArray)) // true
+console.log(isElementInArray({ title: "Apple", quantity: 25 }, fruits)); // true
+
+console.log(isElementInArray({ title: "Banana" }, fruits)); // false
+
+console.log(isElementInArray(25, primitiveTypesArray)); // true
