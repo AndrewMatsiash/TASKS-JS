@@ -7,10 +7,13 @@
  * 3. Также вызовите обе функции
  */
 
+firstFunction(1, 2);//first function closure
+secondFunction(3, 4);// second function not closure
+
 function firstFunction(a, b) {
-  return a + b
+  return a + b;
 }
 
 const secondFunction = function (a, b) {
-  return a + b
-}
+  return a + b;
+};
